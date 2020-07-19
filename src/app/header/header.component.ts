@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Student } from '../student';
+
 
 @Component({
   selector: 'app-header',
@@ -7,8 +7,9 @@ import { Student } from '../student';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Input() headerInfo: Student;
+ 
   
+
   constructor() { }
 
   ngOnInit(): void {

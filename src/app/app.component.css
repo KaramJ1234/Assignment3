@@ -3,9 +3,18 @@ app-content{
     font-family: sans-serif;
 }
 app-header{
+    
     padding-left: 1em;
     font-family: sans-serif;
+    
 }
+h1{
+    font-family: sans-serif;
+
+    color: #4caf50;
+    text-shadow: 2px 2px 5px #81c784;
+}
+
 app-footer{
     padding-left: 1em;
     font-family: sans-serif;
