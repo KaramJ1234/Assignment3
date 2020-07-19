@@ -1,14 +1,14 @@
   
   /* content component CSS */
   .gridArea {
+    padding-left: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
     grid-template-rows: auto;
-    grid-template-areas:  "imgArea listArea inputArea";
+    grid-template-areas:  "imgArea";
     gap: 10px;
     }
-    .common { }
-    .imgArea {grid-area: imgArea; text-align: left;}
-    .listArea {grid-area: listArea;}
-    .inputArea {grid-row: inputArea;}
-    .sheridan {color:white;}
+
+    .imgArea {grid-area: "imgArea"; text-align: left;}
+
+    
