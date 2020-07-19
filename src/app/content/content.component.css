@@ -7,8 +7,8 @@
     grid-template-areas:  "imgArea listArea inputArea";
     gap: 10px;
     }
-    .common {background-color: bisque; border: thick solid navy; padding: 10px; margin: 10px; }
-    .imgArea {grid-area: imgArea; text-align: center;}
+    .common { }
+    .imgArea {grid-area: imgArea; text-align: left;}
     .listArea {grid-area: listArea;}
     .inputArea {grid-row: inputArea;}
     .sheridan {color:white;}

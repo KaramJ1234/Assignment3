@@ -11,13 +11,13 @@ export class ContentComponent implements OnInit {
 
   constructor() { }
 @Input() contentInfo: Student;
-city: string = "Bramptpn";
+
 imagelist:string[] = ["side_1.png","side_2.png","side_3.png","side_4.png","side_5.png","side_6.png"];
-diceFace:string = this.imagelist[0];
+diceFace:string = "stupid.jpg";
 
   ngOnInit(): void {
   }
-  clearCity() {this.city="";}
+
 
 selectPic() {
 this.diceFace = this.imagelist[Math.floor(Math.random()*6)];
@@ -25,10 +25,6 @@ this.diceFace = this.imagelist[Math.floor(Math.random()*6)];
 }
 
 
-  backCampus() {
-    return this.city.toUpperCase() === "BRAMPTON"
-    || this.city.toUpperCase() === "OAKVILLE" ? 'blue':'red';
 
-  }
   
 }
