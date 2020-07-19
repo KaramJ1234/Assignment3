@@ -1,1 +1,44 @@
 <p>content works!</p>
+<!-- content component HTML -->
+<section class="gridArea">
+    <div class="imgArea common">
+      
+      <img src="assets/images/{{diceFace}}" width="150px">
+      <br>
+      <button [disabled]="city === ''" (click)="selectPic()">
+      Roll dice
+      </button>
+    </div>
+    <!--
+
+ <div class="listArea common">
+      <h3>My Student Info:</h3>
+      <ul>
+        <li>Name: {{contentInfo.sname | titlecase}}</li>
+        <li>Campus: {{contentInfo.scampus}}</li>
+        <li>Number: {{contentInfo.sid}}/li>
+        <li>Username: {{contentInfo.slogin}}</li>
+      </ul>
+    </div>
+
+
+    -->
+   
+    <div class="inputArea common">
+      <h3>2-way Binding</h3>
+
+  <p>City: {{city}}</p>
+  
+
+
+   <p *ngIf="(city)==='Brampton' || (city)==='Oakville';else noCampus" [ngStyle]="{backgroundColor:'red'}"> this
+     city has sheridan campus!
+   </p>
+
+
+   <ng-template #noCampus><p>No campus</p></ng-template>
+<p *ngIf="(city | uppercase) === 'BRAMPTON' || (city | uppercase) === 'OAKVILLE'; 
+else noCampus" [ngStyle] = "{backgroundColor:backCampus()}"></p>
+
+  </div>
+  </section>
